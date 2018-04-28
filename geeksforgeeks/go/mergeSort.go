@@ -5,8 +5,8 @@ import "fmt"
 func main() {
 	a := []int{9, 4, 1, 5, 3, 0, 6, 8, 3, 5}
 	//a := []int{9, 8, 7, 6, 5, 4, 3, 2, 1, 0}
-	fmt.Printf("Hello! %v\n", a)
-	fmt.Printf("Hello! %v\n", mergesort(a))
+	fmt.Printf("Original array -> %v\n", a)
+	fmt.Printf("Sorted -> %v\n", mergesort(a))
 }
 
 func mergesort(a []int) []int {
