@@ -9,6 +9,8 @@ class Base{
         int getHydrogen(){
             return hydrogen;
         }
+
+        
         int getOxygen(){
             return oxygen;
         }
