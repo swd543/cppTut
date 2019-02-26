@@ -11,13 +11,9 @@ EXECUTABLE	:= main
 
 RESOURCE	:= words.tgz
 
-extract:
-	tar xvf $(RESOURCE)
-
 all: $(BIN)/$(EXECUTABLE)
-	-extract
 
-run: clean all
+run: clean all extract
 	clear
 	./$(BIN)/$(EXECUTABLE)
 
@@ -26,3 +22,6 @@ $(BIN)/$(EXECUTABLE): $(SRC)/*.cpp
 
 clean:
 	-rm $(BIN)/*
+
+extract:
+	tar xvf $(RESOURCE)
